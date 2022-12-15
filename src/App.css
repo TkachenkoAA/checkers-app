@@ -1,38 +1,88 @@
-.App {
+.app {
+  font-family: Verdana, sans-serif;
+}
+
+.app-header {}
+
+.app-body {}
+
+.app-board {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app-player {
+  position: absolute;
+  top: 100%;
+  left: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app-layout {
+  position: relative;
+  margin: auto;
+  width: 600px;
+  height: 600px;
+  border: 20px solid #c5c1c6;
+  box-shadow: 0 10px 10px -5px #000000;
+  background: #c9bfb7;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.checkers-layout {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
 }
 
-.App-link {
-  color: #61dafb;
+.checkers-bk-spot {}
+
+.checkers-piece {
+  color: #4d4d4d;
+  width: 60px;
+  height: 60px;
+  font-size: 43px;
+  background: transparent;
+  border: 3px solid transparent;
+  padding: 0;
+  box-sizing: border-box;
+  margin-left: 60px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.checkers-piece-odd {
+  margin-left: 0;
+}
+
+.checkers-piece-active {
+  border-color: #009688;
+}
+
+.checkers-piece-selected {
+  border-color: #00af00;
+}
+
+.checkers-piece-dark {
+  color: #3f51b5;
+}
+
+.checkers-piece-light {
+  color: #e2e2e2;
+}
+
+.checkers-bg-spot {
+  color: #4d4d4d;
+  width: 60px;
+  height: 60px;
+  font-size: 43px;
+  background: transparent;
+  border: 3px solid transparent;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.checkers-bg-spot-odd {
+  background-color: #95887f;
 }

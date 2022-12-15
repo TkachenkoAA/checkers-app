@@ -18,8 +18,7 @@ export function Spot({ id }) {
         'checkers-piece-dark': (checkersPieces[id].side.value === -1),
       })}
     >
-      {/* {checkersPieces[id].content} */}
-      {id}
+      {checkersPieces[id].content}
     </button>
   )
 }
